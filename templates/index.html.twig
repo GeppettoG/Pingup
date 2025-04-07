@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!-- Hero Section -->
+  <section class="bg-[#ffdd8f] py-16 px-4">
+    <div class="container mx-auto">
+        <div class="w-full flex flex-col sm:flex-row sm:gap-10 lg:gap-20 items-center sm:justify-start justify-center">
+            <img src="{{ asset('images/pingup.png') }}" alt="Pingup" class="w-60 sm:w-80 bg-white/50 rounded-full p-5" />
+            <div class="w-full pt-5 sm:pt-0 flex flex-col sm:gap-5">
+                <h2 class="sm:text-4xl text-2xl mb-4 rounded-full w-fit mx-auto sm:mx-0">Trouve ton <span class="font-semibold text-[#147C9F]">club de ping</span> en un smash !</h2>
+                <p class="mt-5 mb-10 text-lg lg:text-xl max-w-2xl text-center sm:text-start"><span class="font-semibold">Pingup</span> recense tous les clubs de tennis de table de France, te permet de découvrir, rejoindre ou promouvoir un club local.</p>
+                <a href="#" class="bg-[#147C9F] w-fit text-white px-6 py-3 rounded-md text-lg hover:bg-[#147C9F]/75 transition shadow-sm/25 mx-auto sm:mx-0 border-2 border-black/50">Chercher sur la carte</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Fonctionnalités -->
+  {#<section id="features" class="bg-white/50 py-16 px-4">
+    <div class="container mx-auto">
+        <h2 class="text-5xl font-bold text-center mb-12">Pourquoi utiliser Pingup ?</h2>
+        <div class="grid md:grid-cols-3 gap-8 sm:pt-10">
+            <div class="bg-white/75 p-6 rounded-lg shadow text-center">
+                <h3 class="text-xl font-semibold mb-5">Répertoire national</h3>
+                <p>Tous les clubs de tennis de table en France, facilement accessibles par région et ville.</p>
+            </div>
+            <div class="bg-white/75 p-6 rounded-lg shadow text-center">
+                <h3 class="text-xl font-semibold mb-5">Pages clubs personnalisées</h3>
+                <p>Chaque club peut créer une page dédiée pour se présenter, publier ses infos et actus.</p>
+            </div>
+            <div class="bg-white/75 p-6 rounded-lg shadow text-center">
+                <h3 class="text-xl font-semibold mb-5">Organisation de tournois</h3>
+                <p>Les clubs peuvent créer leurs propres tournois et les partager facilement.</p>
+            </div>
+        </div>
+    </div>
+  </section>#}
+
+  <!-- Tarifs -->
+  <section id="pricing" class="py-16 px-4">
+    <div class="container mx-auto">
+      <h2 class="sm:text-5xl text-4xl font-bold text-center mb-12 atma">Nos offres</h2>
+      <div class="grid md:grid-cols-5 gap-6 sm:pt-5">
+      <div class="col-span-3 bg-[#147C9F] rounded-lg text-center shadow-lg border-3">
+          <h3 class="text-xl bg-[#FFC845] font-bold mb-2 rounded-t-lg py-2">SMASH Pack</h3>
+          <div class="pt-5 pb-8">
+            <p class="text-5xl font-bold text-[#FFC845] drop-shadow-sm/50">19,90€</p>
+            <p class="mb-5 uppercase mt-1 font-semibold text-white">Tarif HT Mensuel</p>
+            <ul class="mb-8 text-white">
+                <li>✓ Création de la page de votre club</li>
+                <li>✓ Accès à X sections</li>
+                <li>✓ Référencement du club</li>
+                <li>✓ Référencement du club</li>
+                <li>✓ Référencement du club</li>
+            </ul>
+            <a href="#" class="bg-[#FFC845] font-semibold px-6 py-3 rounded-md text-lg hover:bg-[#FFC845]/85 transition drop-shadow-sm/50">Découvrir l'offre</a>
+          </div>
+        </div>
+        <div class="col-span-3 md:col-span-2 bg-white/20 rounded-lg text-center shadow-lg border-2">
+          <h3 class="text-xl bg-[#ffdd8f] font-bold mb-2 rounded-t-lg py-2">Spin Pack</h3>
+          <div class="pt-5 pb-8">
+            <p class="text-5xl font-bold text-black/75">14,90€</p>
+            <p class="mb-5 uppercase mt-1 font-semibold">Tarif HT Mensuel</p>
+            <ul class="mb-8">
+                <li>✓ Création de la page de votre club</li>
+                <li>✓ Référencement du club</li>
+                <li>✓ Référencement du club</li>
+                <li class="opacity-60 line-through">✗ Référencement du club</li>
+                <li class="opacity-60 line-through">✗ Référencement du club</li>
+            </ul>
+            <a href="#" class="bg-[#FFC845]/75 px-6 py-3 rounded-md text-lg hover:bg-[#FFC845]/50 transition">Découvrir l'offre</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
